@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://itguyn9.github.io/next-level-reels/sitemap.xml
