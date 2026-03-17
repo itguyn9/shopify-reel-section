@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Next Level Reels</title>
+  <meta name="description" content="Complete your purchase with manual payment options.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo">Next Level Reels</a>
+      <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+  </header>
+
+  <main class="checkout">
+    <div class="container">
+      <div class="checkout-grid">
+        <!-- Order Summary (left column) -->
+        <div class="summary-card">
+          <h2>Order Summary</h2>
+          <div class="product-row">
+            <div class="product-info">
+              <h3>Next Level Reels Section</h3>
+              <p>Lifetime access · Free updates</p>
+            </div>
+            <div class="product-price">$19</div>
+          </div>
+          <div class="total-row">
+            <span>Total</span>
+            <span>$19 USD</span>
+          </div>
+          <div class="secure-badge">
+            <span>🔒</span>
+            <span>Secure checkout · SSL encrypted</span>
+          </div>
+        </div>
+
+        <!-- Payment Methods (right column) -->
+        <div class="payment-card">
+          <h2>Payment Method & Details</h2>
+
+          <!-- Payment method selector -->
+          <div class="method-selector">
+            <label class="method-option">
+              <input type="radio" name="paymentMethod" value="easypaisa" checked>
+              <span>EasyPaisa</span>
+            </label>
+            <label class="method-option">
+              <input type="radio" name="paymentMethod" value="jazzcash">
+              <span>JazzCash</span>
+            </label>
+            <label class="method-option">
+              <input type="radio" name="paymentMethod" value="bank">
+              <span>Bank Transfer (JS Bank)</span>
+            </label>
+          </div>
+
+          <!-- Transaction ID input -->
+          <div class="input-group">
+            <label for="txnId">Transaction ID</label>
+            <input type="text" id="txnId" placeholder="Enter your transaction ID">
+          </div>
+
+          <!-- Name input -->
+          <div class="input-group">
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" placeholder="Full Name">
+          </div>
+
+          <!-- WhatsApp / Email input -->
+          <div class="input-group">
+            <label for="userContact">WhatsApp / Email</label>
+            <input type="text" id="userContact" placeholder="WhatsApp Number or Email">
+          </div>
+
+          <!-- EasyPaisa details -->
+          <div id="easypaisa-details" class="payment-details active">
+            <h3>📱 EasyPaisa</h3>
+            <p>Send payment to: +92 345 901 6204 (Jehangir Khan)</p>
+          </div>
+
+          <!-- JazzCash details -->
+          <div id="jazzcash-details" class="payment-details">
+            <h3>📲 JazzCash</h3>
+            <p>Send payment to: +92 345 901 6204 (Jehangir Khan)</p>
+          </div>
+
+          <!-- Bank Transfer details -->
+          <div id="bank-details" class="payment-details">
+            <h3>🏦 JS Bank (International & Local)</h3>
+            <p>Use the following bank details for wire transfer:</p>
+            <div class="detail-box">
+              <strong>Bank Name:</strong> JS Bank Limited
+            </div>
+            <div class="detail-box">
+              <strong>Account Title:</strong> Jehangir Khan
+            </div>
+            <div class="detail-box">
+              <strong>Account Number (PKR):</strong> 0345 9016204
+            </div>
+            <div class="detail-box">
+              <strong>IBAN (International):</strong> PK12JSBL9999903459016204
+            </div>
+            <div class="detail-box">
+              <strong>SWIFT Code:</strong> JSBLPKKA
+            </div>
+          </div>
+
+          <!-- Confirm button -->
+          <button class="btn" id="confirmPayment">
+            <span id="btnText">I Have Paid / Confirm Order</span>
+          </button>
+
+          <p class="disclaimer">
+            ⚡ After confirmation, your download will start instantly. Password for the ZIP will be sent manually after verifying your transaction ID.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Next Level Reels · All rights reserved · Demo Checkout</p>
+    </div>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
